@@ -1,0 +1,29 @@
+section{
+background-color:hsl(0, 100%, 70%, 0.3);
+font-style:all;
+text-shadow: currentColor;
+
+
+}
+
+#p2{
+	color 	:#000000;   font-weight: lighter; text-align: center;
+}
+#p1{
+	font-size: 20px; color 	:#000000;   font-weight: lighter;
+}
+.thumbnail{
+width:320px ;height: 245px; 
+}
+.thumbnail1{
+width:270px ;height: 275px; 
+}
+.thumbnail2{
+width:280px ;height: 240px; 
+}
+
+.img1{
+	width: 220px;height: 250px;
+
+}
+
