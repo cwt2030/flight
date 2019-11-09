@@ -3,26 +3,209 @@
     <head>
             <!--link css sheet -->
             <link rel="stylesheet"  href="style.css" >
-
+            <meta name="viewport" content="width=device-width, initial-scale=1">
+            <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+            <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+            <meta name="viewport" content="width=device-width, initial-scale=1">
+            <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+        ​
+            <title>Booking Form HTML Template</title>
+        ​
+            <!-- Google font -->
+            <link href="https://fonts.googleapis.com/css?family=Lato:400,700" rel="stylesheet">
+        ​
+            <!-- Bootstrap -->
+            <link type="text/css" rel="stylesheet" href="css/bootstrap.min.css" />
+        ​
+            <!-- Custom stlylesheet -->
+            <link type="text/css" rel="stylesheet" href="css/style.css" />
+            <link href="https://fonts.googleapis.com/css?family=Gloria+Hallelujah|Merienda+One&display=swap" rel="stylesheet">
+            <link href="https://fonts.googleapis.com/css?family=Gloria+Hallelujah|Katibeh|Merienda+One&display=swap" rel="stylesheet">
+            <link href="https://fonts.googleapis.com/css?family=El+Messiri&display=swap" rel="stylesheet">
+             <meta charset="utf-8">
+          <meta name="viewport" content="width=device-width, initial-scale=1">
+          <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+          <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+          <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+        ​
+        ​
+        ​
+            <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+            <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+            <!--[if lt IE 9]>
+                  <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+                  <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+                <![endif]-->
+        
 
     </head>
 
     <body>
-        <h1>موقع حجز طيران </h1>
+        
         <!--هذي المهمه خالد الهيدر والناف بار والحج-->
 
+        <nav class="navbar navbar-inverse">
+            <div class="container-fluid">
+              <div class="navbar-header">
+                <a class="navbar-brand" href="#">Travel with Khaled</a>
+              </div>
+              <ul class="nav navbar-nav">
+                <li class="active"><a href="#">Home</a></li>
+                <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">Flights <span class="caret"></span></a>
+                  <ul class="dropdown-menu">
+                    <li><a href="#">Booking</a></li>
+                    <li><a href="#">Connect with us</a></li>
+                    <li><a href="#">Jobs</a></li>
+                  </ul>
+                </li>
+                <li><a href="#">Hotels</a></li>
+              </ul>
+              <ul class="nav navbar-nav navbar-right">
+                <li><a href="#"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
+                <li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+              </ul>
+            </div>
+          </nav>
+            
+              <div id="booking" class="section">
+                  <div class="section-center">
+                      <div class="container">
+                          <div class="row">
+                              <div class="col-md-4">
+                                  <div class="booking-cta">
+                                      <h1><font face="Merienda One" color="green"size="18">Visit Saudi Arabia</font></h1>
+                                      <p><font face="El Messiri" color="black">السعودية ترحب بالعالم <br> مرحبا بكم  </font></p>
+                                  </div>
+                              </div>
+                              <div class="col-md-7 col-md-offset-1">
+                                  <div class="booking-form">
+                                      <form>
+                                          <div class="form-group">
+                                              <div class="form-checkbox">
+                                                  <label for="roundtrip">
+                                                      <input type="radio" id="roundtrip" name="flight-type">
+                                                      <span></span>Roundtrip
+                                                  </label>
+                                                  <label for="one-way">
+                                                      <input type="radio" id="one-way" name="flight-type">
+                                                      <span></span>One way
+                                                  </label>
+                                                  <label for="multi-city">
+                                                      <input type="radio" id="multi-city" name="flight-type">
+                                                      <span></span>Multi-City
+                                                  </label>
+                                              </div>
+                                          </div>
+                                          <div class="row">
+                                              <div class="col-md-6">
+                                                  <div class="form-group">
+                                                      <span class="form-label">Flying from</span>
+                                                      <input class="form-control" type="text" placeholder="City or airport">
+                                                  </div>
+                                              </div>
+                                              <div class="col-md-6">
+                                                  <div class="form-group">
+                                                      <span class="form-label">Flyning to</span>
+                                                      <input class="form-control" type="text" placeholder="City or airport">
+                                                  </div>
+                                              </div>
+                                          </div>
+                                          <div class="row">
+                                              <div class="col-md-6">
+                                                  <div class="form-group">
+                                                      <span class="form-label">Departing</span>
+                                                      <input class="form-control" type="date" required>
+                                                  </div>
+                                              </div>
+                                              <div class="col-md-6">
+                                                  <div class="form-group">
+                                                      <span class="form-label">Returning</span>
+                                                      <input class="form-control" type="date" required>
+                                                  </div>
+                                              </div>
+                                          </div>
+                                          <div class="row">
+                                              <div class="col-md-4">
+                                                  <div class="form-group">
+                                                      <span class="form-label">Adults (18+)</span>
+                                                      <select class="form-control">
+                                                          <option>1</option>
+                                                          <option>2</option>
+                                                          <option>3</option>
+                                                      </select>
+                                                      <span class="select-arrow"></span>
+                                                  </div>
+                                              </div>
+                                              <div class="col-md-4">
+                                                  <div class="form-group">
+                                                      <span class="form-label">Children (0-17)</span>
+                                                      <select class="form-control">
+                                                          <option>0</option>
+                                                          <option>1</option>
+                                                          <option>2</option>
+                                                      </select>
+                                                      <span class="select-arrow"></span>
+                                                  </div>
+                                              </div>
+                                              <div class="col-md-4">
+                                                  <div class="form-group">
+                                                      <span class="form-label">Travel class</span>
+                                                      <select class="form-control">
+                                                          <option>Economy class</option>
+                                                          <option>Business class</option>
+                                                          <option>First class</option>
+                                                      </select>
+                                                      <span class="select-arrow"></span>
+                                                  </div>
+                                              </div>
+                                          </div>
+                                          <div class="form-btn">
+                                              <button class="submit-btn">Show flights</button>
+                                          </div>
+                                      </form>
+                                  </div>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+          
 
 
 
-
-
-
+<br>
 
 
 
           <!--  هذي المهمه  نواف -->
 
-
+          <section class="section1">
+            <h2 id="p2">اختر الوجهة القادمة</h2>
+            <br></br>
+        <div class="row">
+          <div class="col-xs-6 col-md-3">
+            <a href="1" class="thumbnail">
+              <img src="/img/Riyadh.jpg">
+              <p id="p1"> Riyadh </p>
+            </a>
+          </div>
+          <div class="col-xs-6 col-md-3">
+            <a href="2" class="thumbnail thumbnail2">
+              <img src="/img/Dubai.jpg">
+              <p id="p1"> Dubai </p>
+            </a>
+          </div>
+            <div class="col-xs-6 col-md-3">
+            <a href="3" class="thumbnail thumbnail1 ">
+              <img class="img1" src="/img/Tokoy.jpg">
+              <p id="p1"> Tokyo </p>
+            </a>
+          </div>
+        </div>
+        
+        
+        </section>
+        
 
 
 
@@ -35,8 +218,88 @@
 
          <!--  هذي المهمه  سلطان   -->
 
+        <section class="fotter1">
 
+            <pre>افضل اسعار الطيران مع اشهر الخطوط 
+                الطيران العالمية 
+            </pre>
+            <p>تعرف على ارخص حجوزات الطيران واكثر من بين
+                 ٥٠٠ خط طيران بافظل الاسعار </p>
+                 <dev class="select1">
+                 <div class="select">
+                    <select > 
+                            <option> طيران من الرياض الي المدينه </option>
+                            <option> طيران من الرياض الي المدينه </option>
+                            <option> طيران من الرياض الي المدينه </option>
+                            <option> طيران من الرياض الي المدينه </option>
+                    </select>
+                </div>
+                <div class="select">
 
+                    <select > 
+                            <option> طيران من الرياض الي المدينه </option>
+                            <option> طيران من الرياض الي المدينه </option>
+                            <option> طيران من الرياض الي المدينه </option>
+                            <option> طيران من الرياض الي المدينه </option>
+                    </select>
+                </div>
+                    <div class="select">
+
+                    <select > 
+                            <option> طيران من الرياض الي المدينه </option>
+                            <option> طيران من الرياض الي المدينه </option>
+                            <option> طيران من الرياض الي المدينه </option>
+                            <option> طيران من الرياض الي المدينه </option>
+                    </select>
+                </div>
+                    <div class="select">
+
+                    <select >
+                            <option> طيران من الرياض الي المدينه </option>
+                            <option> طيران من الرياض الي المدينه </option>
+                            <option> طيران من الرياض الي المدينه </option>
+                            <option> طيران من الرياض الي المدينه </option>
+                    </select>
+                </div>
+                    <div class="select">
+
+                    <select > 
+                            <option> طيران من الرياض الي المدينه </option>
+                            <option> طيران من الرياض الي المدينه </option>
+                            <option> طيران من الرياض الي المدينه </option>
+                            <option> طيران من الرياض الي المدينه </option>
+                    </select>
+                </div>
+                    <div class="select">
+
+                    <select > 
+                            <option> طيران من الرياض الي المدينه </option>
+                            <option> طيران من الرياض الي المدينه </option>
+                            <option> طيران من الرياض الي المدينه </option>
+                            <option> طيران من الرياض الي المدينه </option>
+                    </select>
+                </div>
+                 </dev>
+
+        </section>
+        <section class="footer">
+            <div class=foter2 >
+            <h1>حمل تطبيق المطار واحصل على احدث العروض</h1>
+            <h4> حمل تطبيق المطار واحصل على احدث العروض 
+                وحجز الطيران.. واستمتع بافضل تجربه سفر مع المطار </h4>
+                    <button >
+                            <img class="img11" src="img/google.png">
+                    </button>
+                    
+                    <button >
+                        <img class="img11"src="img/apple.png">
+                    </button>
+                </div>
+                <div> 
+                    <img class="img2" src="img/phones.png">
+              </div>
+
+        </section>
 
 
                 <!--link JS sheet -->
